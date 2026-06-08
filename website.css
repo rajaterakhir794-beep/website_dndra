@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #111133, #000014);
+    color: white;
+    line-height: 1.6;
+}
+
+header{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #00bfff;
+}
+
+section{
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#profil img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+#profil p{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+h2{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.projek-item{
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.projek-item:hover{
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.12);
+}
+
+.projek-item h3{
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+form{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+form label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+form input,
+form textarea,
+form select{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+.radio-group,
+.check-group{
+    margin: 10px 0;
+}
+
+.radio-group input,
+.check-group input{
+    width: auto;
+    margin-right: 8px;
+}
+
+button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    background: #00bfff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #0099cc;
+    transform: scale(1.02);
+}
+
+#hasil{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.footer{
+    background: rgba(0,0,0,0.3);
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sosmed{
+    display: inline-flex;
+    gap: 40px;
+    padding: 20px 50px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px;
+    background: rgba(255,255,255,0.08);
+    margin-bottom: 40px;
+}
+
+.sosmed a{
+    color: white;
+    font-size: 45px;
+    transition: 0.3s;
+}
+
+.sosmed a:hover{
+    transform: scale(1.2);
+    color: #00bfff;
+}
+
+.footer p{
+    margin: 12px 0;
+    font-size: 24px;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size: 28px;
+    }
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    .projek-item{
+        width: 95%;
+    }
+
+    form{
+        width: 95%;
+    }
+
+    .footer p{
+        font-size: 18px;
+    }
+
+}
